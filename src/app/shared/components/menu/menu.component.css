@@ -1,0 +1,12 @@
+.dropdown-menu{
+    left: -80px;
+}
+
+.dropdown-toggle:active{
+    border-color: none
+}
+
+.txt-d-down{
+    font-size: 12px;
+    font-weight: 400;
+}
