@@ -1,0 +1,16 @@
+.line{
+    border: 1px solid #03010c;
+}
+
+.btn-custom{
+    background-color: #ca6108;
+    color: #FFFFFF;
+    border: none;
+    width: 100px;
+}
+
+.btn-custom:hover{
+    background-color: #03010c;
+    color: #FFFFFF;
+    border: none;
+}

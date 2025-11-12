@@ -1,0 +1,42 @@
+.txt-title{
+    color: #03010c;
+}
+
+.line{
+    border: 1px solid #03010c;
+}
+
+.title-card{
+    color: #03010c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.txt-result{
+    font-size: 28px;
+    color: #ca6108;
+    font-weight: 600;
+}
+
+.btn-custom{
+    background-color: #ca6108;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-custom:hover{
+    background-color: #03010c;
+    color: #FFFFFF;
+    border: none;
+}
+
+.lnk-item{
+    color: #ca6108;
+    text-decoration: none;
+}
+
+.btn.btn-active{
+    background-color: #ca6108;
+    color: #FFFFFF;
+    border: none;
+}

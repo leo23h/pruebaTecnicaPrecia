@@ -1,0 +1,89 @@
+.img-logo{
+    width: 350px;
+}
+
+.txt-brand{
+    color: #03010c
+}
+
+.i-cust{
+    height: 46px;
+    color: #03010c;
+}
+
+.btn-outline-secondary{
+    border-left-color: #FFFFFF;
+    border-top-color: #dee2e6;
+    border-right-color: #dee2e6;
+    border-bottom-color: #dee2e6;
+    height: 46px;
+}
+
+.btn-outline-secondary:active{
+    border-left-color: #FFFFFF;
+    border-top-color: #dee2e6;
+    border-right-color: #dee2e6;
+    border-bottom-color: #dee2e6;
+    height: 46px;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #FFFFFF;
+    color: #6c757d;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #03010c;
+    color: #FFFFFF;
+}
+
+.nav-link{
+    background-color:#e2e2e2 ;
+    color: #03010c;
+}
+
+.b-cust{
+    background-color: #ca6108;
+    color:#FFFFFF;
+    width: 15rem;
+    border: #ca6108;
+}
+
+.b-cust:active{
+    background-color: #03010c;
+    color:#FFFFFF;
+}
+
+.l-cust{
+    color: #ca6108;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.l-cust:hover{
+    color: #03010c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-cust{
+    background-color: #03010c;
+}
+
+.btn-cust:active{
+    background-color: #03010c;
+}
+
+.btn-cust:hover{
+    background-color: #ca6108;
+}
+
+.icon-cust{
+    color: #03010c;
+}
+
+.icon-cust:hover{
+    color: #ca6108;
+}
+/* #f8f9fa */
+/* #ca6108 */

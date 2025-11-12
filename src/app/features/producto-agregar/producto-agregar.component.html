@@ -1,0 +1,152 @@
+<div class="pt-3 px-5">
+  <h3 class="txt-title mt-4">Agregar Producto</h3>
+  <div class="line"></div>
+  <div class="row">
+    <div class="col-12">
+      <div class="pt-3">
+        <form [formGroup]="productForm" class="row">
+          <div class="mb-3">
+            <label for="SKU" class="form-label">SKU</label>
+            <input
+              type="text"
+              formControlName="sku"
+              class="form-control i-cust"
+              id="sku"
+              placeholder="sku"
+              aria-describedby="sku"
+              [class]="{
+                'border-danger':
+                  productForm.get('sku')?.touched &&
+                  productForm.get('sku')?.invalid
+              }"
+            />
+            <div
+              *ngIf="
+                productForm.get('sku')?.touched &&
+                productForm.get('sku')?.invalid
+              "
+            >
+              <small
+                *ngIf="productForm.get('sku')?.errors?.['required']"
+                class="text-danger mt-1"
+                >sku es obligatorio.</small
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              formControlName="title"
+              class="form-control i-cust"
+              id="nombre"
+              placeholder="Nombre"
+              aria-describedby="nombre"
+              [class]="{
+                'border-danger':
+                  productForm.get('title')?.touched &&
+                  productForm.get('title')?.invalid
+              }"
+            />
+            <div
+              *ngIf="
+                productForm.get('title')?.touched &&
+                productForm.get('title')?.invalid
+              "
+            >
+              <small
+                *ngIf="productForm.get('title')?.errors?.['required']"
+                class="text-danger mt-1"
+                >Nombre es obligatorio.</small
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input
+              type="text"
+              formControlName="brand"
+              class="form-control i-cust"
+              id="marca"
+              placeholder="marca"
+              [class]="{
+                'border-danger':
+                  productForm.get('brand')?.touched &&
+                  productForm.get('brand')?.invalid
+              }"
+            />
+            <div
+              *ngIf="
+                productForm.get('brand')?.touched &&
+                productForm.get('brand')?.invalid
+              "
+            >
+              <small
+                *ngIf="productForm.get('brand')?.errors?.['required']"
+                class="text-danger mt-1"
+                >marca es obligatorio.</small
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="categoria" id="categoria" formControlName="category"  >
+                <option selected disabled>Seleccione</option>
+                @for (item of categoriasList; track $index) {
+                    <option [value]="item">{{item}}</option>
+                }
+            </select>
+            
+            <div
+              *ngIf="
+                productForm.get('category')?.touched &&
+                productForm.get('category')?.invalid
+              "
+            >
+              <small
+                *ngIf="productForm.get('category')?.errors?.['required']"
+                class="text-danger mt-1"
+                >categoria es obligatorio.</small
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input
+              type="text"
+              formControlName="price"
+              class="form-control i-cust"
+              id="precio"
+              placeholder="precio"
+              [class]="{
+                'border-danger':
+                  productForm.get('price')?.touched &&
+                  productForm.get('price')?.invalid
+              }"
+            />
+            <div
+              *ngIf="
+                productForm.get('price')?.touched &&
+                productForm.get('price')?.invalid
+              "
+            >
+              <small
+                *ngIf="productForm.get('price')?.errors?.['required']"
+                class="text-danger mt-1"
+                >Precio es obligatorio.</small
+              >
+            </div>
+          </div>
+          <div class="me-4 text-center">
+            <button
+              type="button"
+              class="btn btn-primary b-cust me-4 mb-3" (click)="guardar()">
+              Guardar
+            </button>
+            <button class="btn btn-custom mb-3" (click)="cerrarModal()">Cerrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

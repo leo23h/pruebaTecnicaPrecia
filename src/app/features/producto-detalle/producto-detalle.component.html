@@ -1,0 +1,35 @@
+<div class="pt-3 px-5">
+    <h3 class="txt-title mt-4">Detalle Producto</h3>
+    <div class="line"></div>
+    <div class="row">
+        <div class="col-12 mt-4">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <strong>Nombre:</strong> {{ productInfo.title }}
+                </div>
+                <div class="col-md-6">
+                    <strong>Descripcion:</strong> {{ productInfo.description }}
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <strong>Precio:</strong> {{ productInfo.price | currency }}
+                </div>
+                <!-- <div class="col-md-6">
+                    <strong>Email:</strong> {{ productInfo.email }}
+                </div> -->
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <strong>Marca:</strong> {{ productInfo.brand }}
+                </div>
+                <div class="col-md-6">
+                    <strong>En stock:</strong> {{ productInfo.stock }}
+                </div>
+            </div>
+            <div class="text-end mb-4">
+                <button class="btn btn-custom" (click)="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
